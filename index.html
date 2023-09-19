@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+<body>
+    <div class="weather-container scroll scroll-2">
+        <div class="locations">
+            <img src="./photos/Frame.svg" alt="">
+            <div class="dropdown d-inline drp-dwn">
+                <a class="btn btn-secondary dropdown-toggle drp-dwn-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Baku
+                </a>
+              
+                <ul class="dropdown-menu">
+                </ul>
+              </div>
+        </div>
+        <div class="condition-img">
+            <img src="" alt="" class="current-img">
+        </div>
+        <p class="current-degree">28º</p>
+        <div class="precipations">
+            <p>Precipations</p>
+            <p>
+                <span>Max.:</span><span class="max-degree">0º</span>
+                
+                <span>Min.:</span><span class="min-degree">0º</span>
+            </p>
+        </div>
+        <div class="rain-hum-wind">
+            <div>
+                <img src="" alt=""> <span class="rain">0%</span>
+            </div>
+            <div>
+                <img src="" alt=""> <span class="humidity">0%</span>
+            </div>
+            <div>
+                <img src="" alt=""> <span class="wind">0 km/h</span>
+            </div>
+        </div>
+
+        <div class="today-weather">
+            <div class="today-date">
+                <span>Today</span>
+                <span class="date"></span>
+            </div>
+            <div class="hourly-weather">
+                <div class="hour hour1">
+                    <p class="hour1-degree">0º</p>
+                    <img src="" alt="" class="hourly-image1">
+                    <p class="hour1-time" >00:00</p>
+                </div>
+                <div class="hour hour2">
+                    <p class="hour2-degree">0º</p>
+                    <img src="" alt="" class="hourly-image2">
+                    <p class="hour2-time">00:00</p>
+                </div>
+                <div class="hour hour3">
+                    <p class="hour3-degree">0º</p>
+                    <img src="" alt="" class="hourly-image3">
+                    <p class="hour3-time">00:00</p>
+                </div>
+                <div class="hour hour4">
+                    <p class="hour4-degree">0º</p>
+                    <img src="" alt="" class="hourly-image4">
+                    <p class="hour4-time">00:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="next-forecast">
+            <div class="headings">
+                <p>Next Forecast</p>
+                <img src="./photos/calendar.svg" alt="">
+            </div>
+            <div class="forecasts">
+                <div class="forecast forecast-1">
+                    <p class="day-of-week-1">Monday</p>
+                    <img src="./photos/noun-humidity-151847 1.svg" alt="" class="day-of-week-img-1">
+                    <p class="min-max">
+                        <span class="max-1">13º</span>
+                        <span class="min-1">10º</span>
+                    </p>
+                </div>
+                <div class="forecast forecast-2">
+                    <p class="day-of-week-2">Monday</p>
+                    <img src="./photos/noun-rain-2438520 1.svg" alt="" class="day-of-week-img-2">
+                    <p class="min-max">
+                        <span class="max-2">13º</span>
+                        <span class="min-2">12º</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
